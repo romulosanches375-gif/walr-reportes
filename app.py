@@ -30,6 +30,11 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 # ===== RUTAS =====
+@app.route('/')
+def index():
+    return "✅ ¡Bienvenido a WALR Reportes!"
+
+
 @app.route('/ping')
 def ping():
     return "pong"
