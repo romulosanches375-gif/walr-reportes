@@ -30,6 +30,9 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 # ===== RUTAS =====
+@app.route('/ping')
+def ping():
+    return "pong"
 
 @app.route('/')
 def index():
