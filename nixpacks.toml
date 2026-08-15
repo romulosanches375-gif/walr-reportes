@@ -1,0 +1,6 @@
+[build]
+  install_cmd = "pip install -r requirements.txt"
+  build_cmd = ""
+
+[start]
+  cmd = "gunicorn app:app --bind 0.0.0.0:8080"
