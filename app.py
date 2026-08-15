@@ -167,6 +167,9 @@ def logout():
     return redirect(url_for('login'))
 
 # ===== RUTAS DE DIAGNÓSTICO =====
+@app.route('/test-simple')
+def test_simple():
+    return "<h1>¡La aplicación está funcionando!</h1><p>Si ves esto, el servidor responde correctamente.</p>"
 
 @app.route('/test')
 def test():
